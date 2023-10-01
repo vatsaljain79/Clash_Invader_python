@@ -75,7 +75,7 @@ for j in range(no_of_enemies): #for multiple enemies
     enemyX.append(random.randint(0, 735))
     enemyY.append(50)
     enemy_xchange.append(0)
-    enemy_ychange.append(0.2)
+    enemy_ychange.append(0.3)
 
 
 def enemy(x, y,j):
@@ -153,7 +153,7 @@ while running:
 
             if score !=0 and score %8==0 and a!=score:
                 for p in range(no_of_enemies):
-                    enemy_ychange[p]+=0.05
+                    enemy_ychange[p]+=0.1
                 a=max(a,score)
 
             enemyY[j]+=enemy_ychange[j]
